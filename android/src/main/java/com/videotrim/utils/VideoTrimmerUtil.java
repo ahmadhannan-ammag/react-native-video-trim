@@ -20,14 +20,14 @@ public class VideoTrimmerUtil {
   public static final long MIN_SHOOT_DURATION = 3000L;// min 3 seconds for trimming
 //  public static final int VIDEO_MAX_TIME = 10;// max 10 seconds for trimming
 //  public static final long MAX_SHOOT_DURATION = VIDEO_MAX_TIME * 1000L;
-  public static long maxShootDuration = 10 * 1000L;
-  public static int MAX_COUNT_RANGE = 10;  // how many images in the highlight range of seek bar
+  public static long maxShootDuration = 1 * 1000L;
+  public static int MAX_COUNT_RANGE = 1;  // how many images in the highlight range of seek bar
   public static int SCREEN_WIDTH_FULL = DeviceUtil.getDeviceWidth();
   public static final int RECYCLER_VIEW_PADDING = UnitConverter.dpToPx(35);
   public static int VIDEO_FRAMES_WIDTH = SCREEN_WIDTH_FULL - RECYCLER_VIEW_PADDING * 2;
 //  public static final int THUMB_WIDTH = (SCREEN_WIDTH_FULL - RECYCLER_VIEW_PADDING * 2) / VIDEO_MAX_TIME;
-  public static int mThumbWidth = 0; // make it automatic
-  public static final int THUMB_HEIGHT = UnitConverter.dpToPx(50); // x2 for better resolution
+  public static int mThumbWidth = 1; // make it automatic
+  public static final int THUMB_HEIGHT = UnitConverter.dpToPx(5); // x2 for better resolution
   private static final int THUMB_RESOLUTION_RES = 2; // double thumb resolution for better quality
 
   public static void trim(String inputFile, String outputFile, int videoDuration, long startMs, long endMs, final VideoTrimListener callback) {
